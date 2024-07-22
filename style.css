@@ -1,0 +1,19 @@
+#gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px; /* Fixed width */
+  height: 960px; /* Fixed height */
+  margin: auto; /* Centering the grid in the viewport */
+}
+
+.gridItem {
+  background-color: lightblue;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: calc(960px / 16); /* Adjust based on number of squares */
+  height: calc(960px / 16); /* Adjust based on number of squares */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
